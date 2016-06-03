@@ -6,6 +6,9 @@ Plugin for vim and config file vimrc
         config file:
         	vimrc 
         	path: /etc/vim/
+        CSDN Blog Refrence：
+        	http://www.cnblogs.com/zhaoyl/p/4078164.html
+        	http://blog.csdn.net/namecyf/article/details/7787479
 
 
                              	                   ZHAOCHAO 
