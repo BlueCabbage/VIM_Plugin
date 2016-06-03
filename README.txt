@@ -1,4 +1,4 @@
-Plugin for vim and config file vimrc
+Some Plugins for vim and config file vimrc
 
 	include:  
 		ctags, cscope, nerdtree, imnicppcomplete 
