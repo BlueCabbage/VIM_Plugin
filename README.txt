@@ -24,6 +24,9 @@ Install
 		  cd ctags
 		  make 
 		  sudo make install
+
+	Cscope:
+		sudo apt-get install cscope
 	
 	Others:
 		  use unzip or tar uncompress them
