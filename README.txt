@@ -18,6 +18,33 @@ Some Plugins for vim and config file vimrc
         	http://blog.csdn.net/namecyf/article/details/7787479
 
 
+Install
+	Ctags: 
+	      unzip ctags.zip  
+		  cd ctags
+		  make 
+		  sudo make install
+	
+	Others:
+		  use unzip or tar uncompress them
+
+		Fix the open a new file bug in Winmanager
+			 cd ~/.vim/plugin
+			vim winmanager.vim
+			/ function! <SID>ToggleWindowsManager()
+			insert a line 'exe 'q'' above the call s:StartWindowsManager()
+			
+			the result like these:
+				funciton! <STD>ToggleWindowsManager()
+					if IsWinManagerVisible()
+						call s:CloseWindowsManager()
+					else
+						call s:StartWindowsManager()
+						exe 'q'
+					end
+				endfunction
+
+			
 Usage
 
 	Ctags:
