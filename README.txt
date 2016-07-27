@@ -28,6 +28,10 @@ Install
 	Cscope:
 		sudo apt-get install cscope
 	
+	MiniBufferExplore:
+		cd ~/.vim
+		mv ./minibufferexplore ./plugin/
+
 	Others:
 		  use unzip or tar uncompress them
 
