@@ -35,7 +35,6 @@ set termencoding=utf-8
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936
 set fileencoding=utf-8
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""新文件标题""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "新建.c,.h,.sh,.java文件，自动插入文件头 
@@ -116,7 +115,7 @@ set clipboard+=unnamed
 "自动保存
 "set autowrite
 set ruler                   " 打开状态栏标尺
-"set cursorline              " 突出显示当前行
+set cursorline              " 突出显示当前行
 "set magic                   " 设置魔术
 set guioptions-=T           " 隐藏工具栏
 set guioptions-=m           " 隐藏菜单栏
@@ -229,8 +228,8 @@ set completeopt=longest,menu
 
 
 "Ctag 
-"map <C-F12> :!ctags -R --C++-kinds=+p --fields=+iaS --extra=+q .<CR>
-nmap <C-/>r :!ctags -R --C++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-F12> :!ctags -R --C++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
 
 "TagLlist
 let Tlist_Show_One_File=1
@@ -243,14 +242,14 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 map <C-F11> :!cscope -Rbq  <CR>
 map <C-F10> :cs add cscope.out
 set cscopequickfix=s-,c-,d-,i-,t-,e-,i-,g-
-nmap <C-/>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>d :cs find d <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>f :cs find f <C-R>=expand("<cword>")<CR><CR>
-nmap <C-/>i :cs find i ^<C-R>=expand("<cword>")<CR>$<CR>
+nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>f :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <C-_>i :cs find i ^<C-R>=expand("<cword>")<CR>$<CR>
 
 
 "OmniCppComplete
@@ -304,26 +303,4 @@ endfunction
 
 nmap wm :WMToggle<CR>
 
-"Use molokai_original theme
-"let g:molokai_original = 1
-"
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
 
-let g:NERDTreeShowIgnoredStatus = 1
-
-
-":set cursorline
-":set cursorcolumn
-":redraw
-colorscheme molokai
